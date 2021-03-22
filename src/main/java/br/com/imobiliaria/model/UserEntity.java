@@ -24,11 +24,11 @@ public class UserEntity {
 	@Column(name="nome")
 	private String nome;
 	
-	@Column(name="email")
-	private String email;
-	
 	@Column(name="senha")
 	private String senha;
+	
+	@Column(name="email")
+	private String email;
 	
 	@Column(name="data_cadastro")
 	@Convert(converter = Jsr310JpaConverters.LocalDateConverter.class)
